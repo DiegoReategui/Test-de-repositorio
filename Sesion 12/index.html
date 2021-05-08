@@ -6,29 +6,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encuesta Cinematografica</title>
     <link rel="icon" href="">
+    <style> 
+    .primero{ 
+        background-color: gray;
+    }
+    .segundo{ 
+        background-color: gray;
+    }
+    .tercero{ 
+        background-color: gray;
+    }
+    .cuarto{ 
+        background-color: gray;
+    }
+    .img1 { 
+        display:flex;
+        padding: 5px;
+        justify-content: center;
+    }
+    </style>
+
 </head>
 <body>
     <div id="Contenedor">
-        <h2>Encuesta de Cine : Nominadas al oscar 2018</h2>
-        <form id="formulario1" name="formulario1" method="post" action="data.php"> 
-            <fieldset id="datos_personales">
-                <legend>Datos Personales </legend>
-                
-                <label for="nombre">Nombre</label><br>
+        <div class="img1" > 
+            <img src="img/img1.jpg" alt="Oscar"style="margin-right 100px;">
+            <h2>Encuesta de Cine : Nominadas al oscar 2018</h2>
+            <img src="img/img1.jpg" alt="Oscar"style="margin-left 100px;">
+        </div>
 
-                <input type="text" name="nombre" id="nombre"><br>
+            <form id="formulario1" name="formulario1" method="post" action="data.php"> 
+                <div class="primero">
+                    <fieldset id="datos_personales">
+                        <legend>Datos Personales </legend>
+                        
+                        <label for="nombre">Nombre</label><br>
+        
+                        <input type="text" name="nombre" id="nombre"><br>
+        
+                        <label for="apellido">Apellido</label><br>
+        
+                        <input type="text" name="apellido" id="apellido"><br>
+        
+                        <label for="dni">DNI</label><br>
+        
+                        <input type="text" name="dni" id="dni" maxlength="8"> <br>
+        
+                        <label for="edad">Edad</label><br>
+        
+                        <input type="text" name="edad" id="edad" size="2" maxlength="2"><br>
+        
+                        <label for="sexo">Sexo</label><br>
+        
+                        <select name="sexo" id="sexo"> <option value="Masculino"> Masculino </option> <option value="Femenino"> Femenino</option></select>
+        
+                    </fieldset>
 
-                <label for="dni">DNI</label><br>
-
-                <input type="text" name="dni" id="dni" maxlength="8"> <br>
-
-                <label for="edad">Edad</label><br>
-
-                <input type="text" name="edad" id="edad" size="2" maxlength="2"><br>
-
-            </fieldset>
+                </div>
+            <div class="segundo">
+                <fieldset id="mejor_pelicula">
+                    <legend>Mejor pelicula</legend>
+    
+                    <input type="radio" name="nombre_pelicula" id="1"> Avengers end Game <br>
+                    <input type="radio" name="nombre_pelicula" id="2"> Fast and Furious 8 <br>
+                    <input type="radio" name="nombre_pelicula" id="3"> Avatar <br>
+    
+                </fieldset>
+            </div>
             
+            
+            <div class="tercero">
+                <fieldset id="pelicula_no_vista">
+                    <legend>Selecciona la pelicula que no has visto</legend>
+                    <input type="checkbox" name="nombre1" id="1"> Dumbo <br>
+                    <input type="checkbox" name="nombre1" id="2"> Madagascar <br>
+                    <input type="checkbox" name="nombre1" id="3"> Destino de Jupiter <br>
+                    <input type="checkbox" name="nombre1" id="4"> Mulan <br>
+                    <input type="checkbox" name="nombre1" id="5"> Sonic <br>
+                
+                </fieldset>
+            </div>
+            
+            <div class="cuarto">
+                <fieldset id="Argumento de la pelicula que mas te guste">
+                    <legend>Argumento de la pelicula que mas te guste</legend>
+                    <textarea name="Argumento" id="Argumento" cols="60" rows="10"></textarea>
+                </fieldset>
+            </div>
+
+
         </form>
+        <br>
+        <input type="reset" value="Eliminar Formulario" style="padding: 5px;">
+
+        <input type="submit" value="Enviar Formulario"style="padding: 5px">
     </div>
     
 </body>
