@@ -1,0 +1,12 @@
+p,  
+ strong
+ {
+    border: 1px solid;
+}
+
+#caja{
+    margin: 10px;
+    padding: 20px;
+    background-color: lawngreen;
+    width: 80px;
+}
