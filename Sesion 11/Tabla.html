@@ -1,37 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Factura telefónica</title>
 </head>
-<body>
-    <table>
-        <caption>Factura Detallada</caption>
+<h1 style= "color:rgb(236, 16, 9)"> <em>Entel S.A</em></h1>
+<table border="1">
+    <caption>Factura detallada</caption>
+    <thead>
+        <tr style="background-color: rgb(13, 216, 230); color: seashell;">
+            <th colspan="5">Entel S.A. - Marzo 2019</th>
+        </tr>
+        <tr>
+            <th style="background-color: rgb(11, 204, 238); color: seashell;" colspan="5">Detalle de cuotas</th>
+        </tr>
+        <tr>
+            <th>PERIODO</th>
+            <th colspan="2">CONCEPTO</th>
+            <th>IMPORTE</th>
+            <th>DESCUENTO</th>
+        </tr>
 
-        <thead>
-             <!--Encabezado-->
-             <tr>
-                 <th> ENTEL S.A - Marzo 2019</th>
-                  </tr>
-                  <tr>
-                      <th>Detalles de cuotas</th>
-                  </tr>
-                  <tr>
-                      <th> PERIODO </th>
-                      <th> CONCEPTO </th>
-                      <th> IMPORTE </th>
-                      <th> DESCUENTO </th>
-                  </tr>
-        </thead>
-        <TFOOt>  <!--Pie -->
-            <tr>
-                <td> 01/03/19-01-04-19</td>
-            </tr>
-        </TFOOt>
-    </table>
-    
+    </thead>
 
-</body>
-</html>
+    <tbody>
+        <tr>
+            <td rowspan="4" style="text-align:center">01/03/19-01/04/19</td>
+        </tr>
+        <tr>
+            <td colspan="2">Servicio de identificación de llamadas</td>
+            <td style="text-align:center">S/120.00</td>
+            <td style="text-align:center">0</td>
+        </tr>
+        <tr>
+            <td colspan="2">Linea individual</td>
+            <td style="text-align:center">S/140.00</td>
+            <td style="text-align:center">0</td>
+
+        </tr>
+        <tr>
+            <td colspan="2">Bono ciudad</td>
+            <td style="text-align:center">S/.100.00</td>
+            <td style="text-align:center">0</td>
+        </tr>
+        <tr>
+            <td style="background-color: rgb(12, 196, 241); color: seashell;" colspan="3"> TOTAL:</td>
+            <td style="text-align:center; background-color: rgba(4, 97, 121, 0.479); " colspan="2"> s/.360.00</td>
+        </tr>
+    </tbody>
+
+    <thead>
+        <tr colspan="4">Detalles de consumos </tr>
+        <tr>
+            <th>CONCEPTO</th>
+            <th>LLAMADAS</th>
+            <th>DURACIÓN</th>
+            <th>IMPORTE</th>
+            <th>DESCUENTO</th>
+        </tr>
+
+    </thead>
+    <tbody>
+        <tr>
+            <td> Llamada internacional</td>
+            <td style="text-align:center">23</td>
+            <td style="text-align:center">10m 23s</td>
+            <td style="text-align:center">S/.130.00</td>
+            <td style="text-align:center">0</td>
+        <tr>
+            <td>Llamada metropolitana</td>
+            <td style="text-align:center">23</td>
+            <td style="text-align:center">10m 23s</td>
+            <td style="text-align:center">S/.35.00</td>
+            <td style="text-align:center">0</td>
+        </tr>
+        <tr>
+            <td style="background-color: rgb(12, 196, 241); color: seashell;" colspan="3"> TOTAL:</td>
+            <td style="text-align:center; background-color: rgba(4, 98, 121, 0.678)"colspan="2"> S/.165.00</td>
+        </tr>
+
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="5" style="text-align:center; font-size:13px">
+                <em> Entel le informa que llamar al número gratiuto 081-808080
+                    para cualquier duda o sugerencia que tenga acerca de esta facturao de nuestros servicios.
+                </em>
+            </td>
+        </tr>
+    </tfoot>
+
+</table>
