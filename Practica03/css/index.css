@@ -3,36 +3,107 @@
     max-width: 100%;
     min-height: 100vh;
     grid-template-columns: 9% 73% 18%;
-    grid-template-rows: 150px 50px 1fr 100px;
-    grid-template-areas: "nav header header" "noticia noticia aside" "informacion informacion informacion" "footer footer footer"
+    grid-template-rows: 150px  1fr 200px 40px;
+    grid-template-areas: "nav header header" "noticia noticia aside" 
+    "informacion informacion informacion" "footer footer footer"
 
+}
+body{
+    font-family: arial;
 }
 .nav{
     grid-area: nav;
     background-color: black;
-    font-size: 15px;
+    font-size: 16.5px;
+}
+.nav .color{
+    background-color: skyblue;
+}
+.nav ul{    
+    padding-left:0px;
+    width: 100%;
 }
 .nav ul li{
+    text-align: center;
     list-style: none;
     color: white;
     margin: 0px;
     padding-top: 12px;
     border: 1px solid;
 }
-nav ul li a{
+.header .web{
+text-align: center;
+}
+.nav ul li a{
     color: white;
     text-decoration: none;
     margin-left: 0px;
 }
 .header{
     grid-area: header;
-    background-color: darkgray;
+    background-color: skyblue;
 }
+.nombre{
+    text-align: center;
+    font-size: 40px;
+    }
 .header img{
-    width: 103px;
+    width: 150px;
+    height: 100%;
     float: left;
 }
-.nav ul{
-    padding-left:0px;
-    width: 140px;
+
+
+.article{
+    grid-area: noticia;
+}
+.aside{
+    
+    background-color: aqua;
+        grid-area: aside;
+}
+.aside .menu{
+    margin: 15%;
+    background-color: skyblue;
+}
+.aside .enlace{
+    background-color: skyblue;
+    margin: 15%;
+    margin-top: 40%;
+}
+
+.section{
+    background-color: skyblue;
+    display: flex;
+    grid-area: informacion;
+    }
+    .section ul{
+        padding-left: 100px;
+    }
+    .section .imagen img{
+        width: 120px;
+        margin: 30%;
+
+    }
+
+    
+
+.footer{
+    color: white;
+    background-color: black;
+    text-align: center;
+    grid-area: footer;
+}
+#IniciarSesion{
+    float: right;
+    margin: 20px;
+    font-weight: bold;
+}
+
+.article img{
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin-right: 5%;
+    padding: 10px;
 }
